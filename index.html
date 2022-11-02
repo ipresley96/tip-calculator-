@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex column">
+  <header>
+    <img src="/images/logo.svg" alt="">
+  </header>
+  <main class="flex column">
+    <section class="container percent flex column">
+      <div>
+        <p> Bill </p>
+        <div class="relative">
+          <img class="icon" src="/images/icon-dollar.svg" alt="">
+          <input type="number" class="bill">
+        </div>
+      </div>
+      <div class="container column flex">
+        <p> Select Tip % </p>
+        <div class="grid column btns">
+            <button class="btn" data-value="5">5%</button> 
+            <button class="btn" data-value="10"> 10%</button>
+            <button class="btn" data-value="15">15%</button> 
+            <button class="btn" data-value="25"> 25%</button>
+            <button class="btn" data-value="50">50% </button> 
+            <input class="custom" type="number" name="" id="" placeholder="Custom"> 
+          </div>
+        </div>
+      </div>
+      <div>
+        <p> Number of People </p>
+        <div class="relative">
+          <img class="icon" src="/images/icon-person.svg" alt="">
+          <input type="number" min="1" value="1"  class="indivdual">
+        </div>
+      </div>
+  
+  </section>
+  <section class="container flex column tip-cal space-between">
+    <div class="tip-container flex column">
+      <div class="tip flex space-between">
+        <span> <strong> Tip Amount </strong>
+          <br> / person
+        </span>
+        <div class="text-right tipPerPerson total"> $0.00 </div>
+      </div>
+      <div class="totalBill flex space-between">
+        <span> <strong> Total </strong>
+          <br>/ person
+        </span> 
+        <div class="text-right totalTip total"> $0.00 </div>
+      </div>
+    </div>
+    <button class="reset">Reset</button> 
+  </section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
