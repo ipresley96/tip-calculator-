@@ -181,6 +181,7 @@ strong{
 @media (min-width:1000px){
     body{
         flex-direction: column;
+        justify-content: center;
     }
 
     main{
