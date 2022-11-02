@@ -187,6 +187,10 @@ strong{
         width: 50rem;
         border-radius: 1rem;
     }
+    
+    header {
+        padding: 0 2rem 2rem 2rem;
+    }
 
     main.column{
         flex-direction: row;
